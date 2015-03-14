@@ -1,0 +1,38 @@
+
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>CS4US: Login</title>
+<link rel="stylesheet" type="text/css" href="style.css"/>
+    <link rel="stylesheet" href="jqueryui.css" type="text/css" media="all" />
+    <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+<script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.22/jquery-ui.min.js"></script>
+<script type="text/javascript" src="js/login.js"></script>
+
+</head>
+
+<body>
+<h1>Please log in to enter the site</h1>
+
+<form id='login_form'>
+<label>Username: <input id='uname' name='username' type="text"></label><br>
+<label>Password: <input id='pw' name='password' type="password"></label><br>
+<button id="login_button" type="submit">Login</button>
+</form>
+
+<button onclick="createUser()" id="newUser" type="submit">Create Account</button>
+
+<div id="post" style="display:none;">
+  <form id="myUser">
+    Username: <input id="uname2"  value=" "  name="username" type="text"><br/>
+    Display Name: <input name="display_name"><br/>
+    Email: <input name="email"><br/>
+    Password: <input type="password" name="password" id="pw1"><br/>
+  </form>
+    Confirm Password: <input type="password" id="pw2">
+</div>
+</body>
+
+</html>
